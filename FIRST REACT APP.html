@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FIRST REACT APP</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+        <style>
+            body{
+                background-color:blue;
+                color:white;
+            }
+        </style>
+        <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+      let counter = 0;
+
+      function show() {
+          counter++;
+         const el =<center><p>WELCOME TO REACT TIMER!</p><h1>{counter}  SECONDS FROM STARTING THE APP</h1></center>;
+          ReactDOM.render(
+              el,document.getElementById('root')
+          );
+      }
+      setInterval(show,1000);
+      </script>
+    </body>
+</html>
